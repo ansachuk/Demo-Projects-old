@@ -1,1 +1,2 @@
-import { mod } from "modern-normalize";
+import "modern-normalize/modern-normalize.css";
+import "./sass/index.scss";
