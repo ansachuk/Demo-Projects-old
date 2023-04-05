@@ -1,45 +1,67 @@
-@keyframes changeBgColor {
+@keyframes changeBgcAndBoxShadowColor {
   0% {
     color: deeppink;
+    box-shadow: 0px 25px 65px 0px rgba(255, 20, 147, 0.5),
+      0px 35px 22px 0px rgba(255, 20, 147, 0.16);
   }
 
   10% {
-    color: red;
+    color: rgb(255, 0, 0);
+    box-shadow: 0px 25px 65px 0px rgba(255, 0, 0, 0.5),
+      0px 35px 22px 0px rgba(255, 0, 0, 0.16);
   }
 
   20% {
-    color: orange;
+    color: rgb(255, 166, 0);
+    box-shadow: 0px 25px 65px 0px rgba(255, 166, 0, 0.5),
+      0px 35px 22px 0px rgba(255, 166, 0, 0.16);
   }
 
   30% {
-    color: yellow;
+    color: rgb(255, 255, 0);
+    box-shadow: 0px 25px 65px 0px rgba(255, 255, 0, 0.5),
+      0px 35px 22px 0px rgba(255, 255, 0, 0.16);
   }
 
   40% {
-    color: yellowgreen;
+    color: rgb(153, 205, 50);
+    box-shadow: 0px 25px 65px 0px rgba(153, 205, 50, 0.5),
+      0px 35px 22px 0px rgba(153, 205, 50, 0.16);
   }
 
   50% {
-    color: green;
+    color: rgb(0, 128, 0);
+    box-shadow: 0px 25px 65px 0px rgba(0, 128, 0, 0.5),
+      0px 35px 22px 0px rgba(0, 128, 0, 0.16);
   }
 
   60% {
-    color: aqua;
+    color: rgb(0, 255, 255);
+    box-shadow: 0px 25px 65px 0px rgba(0, 255, 255, 0.5),
+      0px 35px 22px 0px rgba(0, 255, 255, 0.16);
   }
 
   70% {
-    color: deepskyblue;
+    color: rgb(0, 191, 255);
+    box-shadow: 0px 25px 65px 0px rgba(0, 191, 255, 0.5),
+      0px 35px 22px 0px rgba(0, 191, 255, 0.16);
   }
 
   80% {
-    color: blue;
+    color: rgb(0, 0, 255);
+    box-shadow: 0px 25px 65px 0px rgba(0, 0, 255, 0.5),
+      0px 35px 22px 0px rgba(0, 0, 255, 0.16);
   }
 
   90% {
-    color: purple;
+    color: rgb(128, 0, 128);
+    box-shadow: 0px 25px 65px 0px rgba(128, 0, 128, 0.5),
+      0px 35px 22px 0px rgba(128, 0, 128, 0.16);
   }
 
   100% {
-    color: palevioletred;
+    color: rgb(216, 112, 147);
+    box-shadow: 0px 25px 65px 0px rgba(216, 112, 147, 0.5),
+      0px 35px 22px 0px rgba(128, 0, 128, 0.16);
   }
 }
