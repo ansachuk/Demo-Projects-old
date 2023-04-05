@@ -1,15 +1,24 @@
-.main_title {
-  font-family: "Rubik", sans-serif;
-  font-size: 90px;
-  font-weight: bold;
+.main {
+  display: flex;
 
-  text-align: center;
+  &_title {
+    display: inline-block;
+    margin: 50px auto;
+    padding: 5px 10px;
 
-  color: aqua;
+    font-family: "Rubik", sans-serif;
+    font-size: 90px;
+    font-weight: bold;
 
-  animation-name: changeBgcAndBoxShadowColor;
-  animation-duration: 8000ms;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
+    color: aqua;
+    border-radius: 10px;
+
+    background-color: #ffffffc9;
+
+    animation-name: changeBgcAndBoxShadowColor;
+    animation-duration: 8000ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+  }
 }
