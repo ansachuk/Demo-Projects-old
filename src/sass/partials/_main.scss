@@ -7,7 +7,6 @@
     margin: 50px auto;
     padding: 5px 10px;
 
-    font-family: "Rubik", sans-serif;
     font-size: 90px;
     font-weight: bold;
 
@@ -35,6 +34,8 @@
 
   &__link {
     position: relative;
+
+    font-family: $fontFamily;
     font-size: large;
     font-weight: bold;
 
