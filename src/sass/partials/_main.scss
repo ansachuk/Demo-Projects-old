@@ -59,3 +59,41 @@
     }
   }
 }
+
+.exp-cards__ {
+  &list {
+    margin: 80px auto 0;
+    width: 90%;
+
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  &item {
+    flex-basis: 100px;
+
+    cursor: pointer;
+
+    transition-property: flex-grow;
+    transition-duration: 500ms;
+    transition-timing-function: linear;
+
+    &:hover {
+      flex-grow: 1;
+    }
+  }
+
+  &img {
+    border-radius: 25px;
+
+    height: 700px;
+
+    object-fit: cover;
+
+    color: rgb(0, 34, 63);
+
+    box-shadow: 0 60px 80px rgba(0, 34, 63, 0.6),
+      0 45px 26px rgba(0, 34, 63, 0.14);
+  }
+}
