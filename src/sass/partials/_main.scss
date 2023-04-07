@@ -26,13 +26,14 @@
   }
 }
 
-.demo {
+.demo__ {
   padding: 20px;
 
-  //   &.demo__item {
-  //   }
+  &item {
+    margin-bottom: 15px;
+  }
 
-  &__link {
+  &link {
     position: relative;
 
     font-family: $fontFamily;
