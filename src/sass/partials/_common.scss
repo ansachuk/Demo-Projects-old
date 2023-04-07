@@ -27,3 +27,34 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+
+  border: none;
+  border-radius: 20px;
+
+  background-color: $accentColor;
+
+  color: $color;
+  font-weight: 600;
+  transition: background-color $transDuration $transTimeFunction;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgb(42, 2, 153);
+  }
+
+  &:disabled,
+  &:disabled:active {
+    cursor: default;
+    background-color: grey;
+    color: rgb(177, 190, 190);
+  }
+
+  &:active {
+    background-color: rgb(27, 0, 100);
+  }
+}
