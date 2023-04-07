@@ -20,19 +20,20 @@
 
     animation-name: changeBgcAndBoxShadowColor;
     animation-duration: 8000ms;
-    animation-timing-function: linear;
+    animation-timing-function: $transTimeFunction;
     animation-iteration-count: infinite;
     animation-direction: normal;
   }
 }
 
-.demo {
+.demo__ {
   padding: 20px;
 
-  //   &.demo__item {
-  //   }
+  &item {
+    margin-bottom: 15px;
+  }
 
-  &__link {
+  &link {
     position: relative;
 
     font-family: $fontFamily;
@@ -51,7 +52,7 @@
 
       transition-property: width;
       transition-duration: 250ms;
-      transition-timing-function: ease-in-out;
+      transition-timing-function: $transTimeFunction;
     }
 
     &:hover::before {
@@ -77,8 +78,8 @@
     cursor: pointer;
 
     transition-property: flex-grow;
-    transition-duration: 600ms;
-    transition-timing-function: linear;
+    transition-duration: $transDuration * 2;
+    transition-timing-function: $transTimeFunction;
 
     &:hover {
       flex-grow: 1;
@@ -99,8 +100,8 @@
     opacity: 0;
 
     transition-property: opacity;
-    transition-duration: 600ms;
-    transition-timing-function: linear;
+    transition-duration: $transDuration * 2;
+    transition-timing-function: $transTimeFunction;
   }
 
   &img {
@@ -114,5 +115,63 @@
 
     box-shadow: 0 60px 80px rgba(0, 34, 63, 0.6),
       0 45px 26px rgba(0, 34, 63, 0.14);
+  }
+}
+
+.steps {
+  &__list {
+    margin: 200px auto 50px;
+
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  &__item {
+    position: relative;
+
+    width: 50px;
+    height: 50px;
+
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 3px solid $color;
+    border-radius: 50%;
+
+    transition-property: border-color;
+    transition-duration: $transDuration;
+    transition-timing-function: $transTimeFunction;
+
+    &:not(:first-child)::after {
+      content: "";
+      position: absolute;
+      bottom: 20px;
+      right: 47px;
+      height: 3px;
+      width: 51px;
+      background-color: $color;
+
+      transition-property: background-color, width;
+      transition-duration: $transDuration;
+      transition-timing-function: $transTimeFunction;
+    }
+
+    &.steps_active {
+      border-color: rgb(1, 117, 211);
+
+      &:not(:first-child)::after {
+        background-color: rgb(1, 117, 211);
+      }
+    }
+  }
+
+  &__buttons-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
   }
 }
