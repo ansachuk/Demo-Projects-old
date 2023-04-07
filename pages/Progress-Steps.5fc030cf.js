@@ -1,0 +1,2 @@
+const e=document.querySelectorAll(".steps__item"),t=document.querySelector("[data-action='prev']"),i=document.querySelector("[data-action='next']"),r="steps_active";let d=0;t.addEventListener("click",(function(){if(i.removeAttribute("disabled"),e[d].classList.remove(r),d-=1,0===d)return void t.setAttribute("disabled","true")})),i.addEventListener("click",(function(){if(t.removeAttribute("disabled"),d+=1,e[d].classList.add(r),d===e.length-1)return void i.setAttribute("disabled","true")}));
+//# sourceMappingURL=Progress-Steps.5fc030cf.js.map
