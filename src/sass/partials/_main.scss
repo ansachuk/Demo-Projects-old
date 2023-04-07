@@ -20,7 +20,7 @@
 
     animation-name: changeBgcAndBoxShadowColor;
     animation-duration: 8000ms;
-    animation-timing-function: linear;
+    animation-timing-function: $transTimeFunction;
     animation-iteration-count: infinite;
     animation-direction: normal;
   }
@@ -52,7 +52,7 @@
 
       transition-property: width;
       transition-duration: 250ms;
-      transition-timing-function: ease-in-out;
+      transition-timing-function: $transTimeFunction;
     }
 
     &:hover::before {
@@ -78,8 +78,8 @@
     cursor: pointer;
 
     transition-property: flex-grow;
-    transition-duration: 600ms;
-    transition-timing-function: linear;
+    transition-duration: $transDuration * 2;
+    transition-timing-function: $transTimeFunction;
 
     &:hover {
       flex-grow: 1;
@@ -100,8 +100,8 @@
     opacity: 0;
 
     transition-property: opacity;
-    transition-duration: 600ms;
-    transition-timing-function: linear;
+    transition-duration: $transDuration * 2;
+    transition-timing-function: $transTimeFunction;
   }
 
   &img {
