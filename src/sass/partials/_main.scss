@@ -13,8 +13,6 @@
     color: aqua;
     border-radius: 10px;
 
-    // background-color: #ffffffc9;
-
     user-select: none;
     cursor: default;
 
@@ -141,6 +139,9 @@
 
     border: 3px solid $color;
     border-radius: 50%;
+
+    user-select: none;
+    cursor: default;
 
     transition-property: border-color;
     transition-duration: $transDuration;
