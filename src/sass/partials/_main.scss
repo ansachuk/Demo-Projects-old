@@ -179,10 +179,13 @@
 
 .rot-nav-anima {
   &__wrapper {
+    position: relative;
     display: flex;
     min-width: 100%;
 
     background-color: teal;
+    transform: rotate(-15deg);
+    transform-origin: top left;
   }
 
   &__main {
@@ -221,7 +224,7 @@
   }
 
   &__aside {
-    position: relative;
+    // position: relative;
 
     &-list {
       position: fixed;
