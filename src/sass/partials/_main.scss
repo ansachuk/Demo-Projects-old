@@ -178,8 +178,12 @@
 }
 
 .rot-nav-anima {
-  display: flex;
-  background-color: teal;
+  &__wrapper {
+    display: flex;
+    min-width: 100%;
+
+    background-color: teal;
+  }
 
   &__main {
     width: 70%;
@@ -217,6 +221,25 @@
   }
 
   &__aside {
+    position: relative;
+
+    &-list {
+      position: fixed;
+      left: 20px;
+      bottom: 100px;
+    }
+
+    &-item {
+      display: flex;
+      gap: 10px;
+
+      align-items: center;
+
+      &:not(:last-child) {
+        margin-bottom: 40px;
+      }
+    }
+
     &-icon {
       fill: $color;
     }
