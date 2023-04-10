@@ -178,19 +178,44 @@
 }
 
 .rot-nav-anima {
+  overflow-x: hidden;
   &__wrapper {
     position: relative;
     display: flex;
     min-width: 100%;
 
     background-color: teal;
-    transform: rotate(-15deg);
+    // transform: rotate(-15deg);
     transform-origin: top left;
   }
 
   &__main {
     width: 70%;
     margin: 100px auto 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background-color: tomato;
+      transform: translate(-50%, -50%);
+    }
+
+    & button {
+      position: absolute;
+      top: 18px;
+      left: 0;
+
+      background-color: transparent;
+
+      & .rna-icon {
+        fill: $color;
+      }
+    }
   }
 
   &__article {
@@ -224,22 +249,31 @@
   }
 
   &__aside {
-    // position: relative;
+    position: relative;
 
     &-list {
       position: fixed;
       left: 20px;
-      bottom: 100px;
+      bottom: 80px;
     }
 
     &-item {
       display: flex;
       gap: 10px;
-
       align-items: center;
 
-      &:not(:last-child) {
-        margin-bottom: 40px;
+      cursor: pointer;
+
+      margin-left: 15px;
+      margin-bottom: 40px;
+
+      &:first-child {
+        margin-left: 10px;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+        margin-left: 20px;
       }
     }
 
