@@ -1,9 +1,53 @@
+* {
+  color: black;
+  padding: 0;
+  margin: 0;
+}
+
 body {
   background-color: teal;
 }
+
+a {
+  text-decoration: none;
+}
+
 .container {
-  width: 1200px;
-  height: 20px;
-  background-color: #fff;
+  // max-width: 375px;
+  //   height: 100px;
   margin: 0 auto;
+}
+
+.header {
+  background-color: #fff;
+  border: 1.5px solid #111111;
+  border-radius: 0px 0px 8px 8px;
+
+  &__container {
+    padding: 18px 20px;
+
+    display: flex;
+  }
+}
+
+.logo {
+  display: flex;
+  gap: 8px;
+  &__icon {
+    width: 22px;
+    height: 22px;
+    background-color: violet;
+  }
+}
+
+.nav {
+  display: none;
+  &__list {
+    display: flex;
+    list-style: none;
+  }
+}
+
+.controlls {
+  margin-left: auto;
 }
