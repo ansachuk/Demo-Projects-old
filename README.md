@@ -10,7 +10,7 @@ All the projects in this repository were made exclusively by me and were
 inspired by the 50days50projects challenge. This challenge aims to help
 developers improve their skills by creating one project every day for 50 days.👨‍💻
 
-https://github.com/bradtraversy/50projects50days
+[https://github.com/bradtraversy/50projects50days](https://github.com/bradtraversy/50projects50days)
 
 As a beginner developer, I am constantly learning and experimenting with new
 technologies, tools, and frameworks. My goal is to create projects that are not
